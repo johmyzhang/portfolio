@@ -15,7 +15,13 @@
       "Bash(npx sanity@latest init --bare --dataset production --no-git --yes)",
       "Bash(npx sanity@latest init --bare --dataset production --project-name \"portfolio\" --no-git --yes)",
       "Bash(npx sanity@latest login)",
-      "Bash(npx sanity:*)"
+      "Bash(npx sanity:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(curl -sL \"https://picsum.photos/800/800?random=1\" -o /Users/yizhang/Documents/portfolio/public/images/travel/new-york.jpg)",
+      "Bash(curl -sL \"https://picsum.photos/800/800?random=2\" -o /Users/yizhang/Documents/portfolio/public/images/travel/california.jpg)",
+      "Bash(curl -sL \"https://picsum.photos/800/800?random=3\" -o /Users/yizhang/Documents/portfolio/public/images/travel/nanning.jpg)",
+      "Bash(curl -sL \"https://picsum.photos/200/300?random=4\" -o /Users/yizhang/Documents/portfolio/public/images/books/maybe-you-should-talk.jpg)"
     ]
   }
 }

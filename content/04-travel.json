@@ -1,0 +1,22 @@
+{
+  "label": "游记",
+  "heading": "步履不停",
+  "type": "gallery",
+  "entries": [
+    {
+      "image": "/images/travel/new-york.jpg",
+      "caption": "纽约 · 2023",
+      "rotation": "rotate-1"
+    },
+    {
+      "image": "/images/travel/california.jpg",
+      "caption": "加州一号公路",
+      "rotation": "-rotate-2"
+    },
+    {
+      "image": "/images/travel/nanning.jpg",
+      "caption": "南宁 · 故乡",
+      "rotation": "rotate-2"
+    }
+  ]
+}

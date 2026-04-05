@@ -1,0 +1,22 @@
+{
+  "label": "轨迹",
+  "heading": "我的轨迹",
+  "type": "timeline",
+  "entries": [
+    {
+      "title": "现在 - 洛杉矶",
+      "description": "Community Mental Health 咨询师",
+      "isCurrent": true
+    },
+    {
+      "title": "2023 - 哥伦比亚大学",
+      "description": "心理咨询深造",
+      "isCurrent": false
+    },
+    {
+      "title": "2019 - UC Davis",
+      "description": "Psychology (Bio Emphasis)",
+      "isCurrent": false
+    }
+  ]
+}

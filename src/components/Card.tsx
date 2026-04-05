@@ -1,28 +1,26 @@
-import { ClimbingData } from "@/lib/types";
+import { Tag } from "@/lib/types";
 import SectionHeading from "./SectionHeading";
 
-interface ClimbingProps {
-  data: ClimbingData | null;
+interface Props {
+  id: string;
   heading: string;
+  description: string;
+  tags: Tag[];
 }
 
-export default function Climbing({ data, heading }: ClimbingProps) {
-  if (!data) return null;
-
+export default function Card({ id, heading, description, tags }: Props) {
   return (
-    <section id="climbing" className="max-w-3xl mx-auto px-6 py-12">
+    <section id={id} className="max-w-3xl mx-auto px-6 py-12">
       <SectionHeading>{heading}</SectionHeading>
       <div className="bg-white rounded-xl p-6 shadow-sm border border-[#D4D4CE]/30">
-        <p className="text-sm text-gray-600 leading-relaxed mb-4">
-          {data.description}
-        </p>
-        {data.tags?.length > 0 && (
+        <p className="text-sm text-gray-600 leading-relaxed mb-4">{description}</p>
+        {tags?.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            {data.tags.map((tag) => (
+            {tags.map((tag, i) => (
               <span
-                key={tag._key}
+                key={i}
                 className={`px-3 py-1 text-xs rounded-full ${
-                  tag.isPrimary
+                  tag.primary
                     ? "bg-[#6B705C] text-white"
                     : "bg-[#E5E5E0] text-[#4A4A4A]"
                 }`}

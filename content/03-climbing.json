@@ -1,0 +1,11 @@
+{
+  "label": "攀岩",
+  "heading": "向上生长的本能",
+  "type": "card",
+  "description": "攀岩不仅是体能的对抗，更是与内心恐惧的博弈。每一次脱落（fall），都是为了下一次更好地抓住岩点。这和心理咨询的过程何其相似。",
+  "tags": [
+    { "label": "抱石 V4", "primary": true },
+    { "label": "顶绳 5.10c", "primary": false },
+    { "label": "📍 LA 某岩馆", "primary": false }
+  ]
+}

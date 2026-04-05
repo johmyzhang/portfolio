@@ -1,0 +1,13 @@
+{
+  "label": "读书",
+  "heading": "书页间的避难所",
+  "type": "books",
+  "entries": [
+    {
+      "title": "《也许你该找个人聊聊》",
+      "author": "Lori Gottlieb",
+      "cover": "/images/books/maybe-you-should-talk.jpg",
+      "reviewNote": "\"痛觉是改变的催化剂。\" 作为咨询师读这本书，更能共情那种在咨询室里彼此镜射、共同成长的脆弱与勇敢。"
+    }
+  ]
+}

@@ -1,66 +1,47 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-type SanityImageSource = any;
-
-export interface SiteSettings {
+export interface Settings {
   siteTitle: string;
   ownerName: string;
   heroQuote: string;
   heroBio: string;
-  navLinks: NavLink[];
-  timelineHeading: string;
-  readingHeading: string;
-  climbingHeading: string;
-  travelHeading: string;
-  diaryHeading: string;
   footerText: string;
 }
 
-export interface NavLink {
-  _key: string;
+export interface Section {
+  id: string;
   label: string;
-  sectionId: string;
+  heading: string;
+  type: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any;
 }
 
 export interface TimelineEntry {
-  _id: string;
   title: string;
   description: string;
   isCurrent: boolean;
-  order: number;
 }
 
-export interface Book {
-  _id: string;
+export interface BookEntry {
   title: string;
   author: string;
-  cover?: SanityImageSource;
+  cover: string;
   reviewNote: string;
-  order: number;
 }
 
-export interface ClimbingData {
-  description: string;
-  tags: ClimbingTag[];
-}
-
-export interface ClimbingTag {
-  _key: string;
-  label: string;
-  isPrimary: boolean;
-}
-
-export interface TravelPhoto {
-  _id: string;
-  image?: SanityImageSource;
+export interface TravelEntry {
+  image: string;
   caption: string;
   rotation: string;
-  order: number;
 }
 
 export interface DiaryEntry {
-  _id: string;
   date: string;
   mood: string;
   content: string;
   bgColor: string;
+}
+
+export interface Tag {
+  label: string;
+  primary: boolean;
 }
