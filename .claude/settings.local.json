@@ -14,7 +14,8 @@
       "Bash(npx sanity@latest init --bare --dataset-default --no-git --yes)",
       "Bash(npx sanity@latest init --bare --dataset production --no-git --yes)",
       "Bash(npx sanity@latest init --bare --dataset production --project-name \"portfolio\" --no-git --yes)",
-      "Bash(npx sanity@latest login)"
+      "Bash(npx sanity@latest login)",
+      "Bash(npx sanity:*)"
     ]
   }
 }

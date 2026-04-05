@@ -1,12 +1,13 @@
 {
-  "name": "portfolio-new",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "publish-content": "npx sanity dataset export development ./content-export.tar.gz --project-id v9p9a39v --overwrite && npx sanity dataset import ./content-export.tar.gz production --project-id v9p9a39v --replace && rm ./content-export.tar.gz"
   },
   "dependencies": {
     "@sanity/image-url": "^2.1.1",

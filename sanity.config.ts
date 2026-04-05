@@ -3,13 +3,15 @@ import { structureTool } from "sanity/structure";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./src/sanity/schemas";
 
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
+
 export default defineConfig({
   name: "portfolio",
-  title: "Portfolio CMS",
+  title: dataset === "production" ? "Portfolio CMS" : `Portfolio CMS [${dataset}]`,
   basePath: "/studio",
 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
+  dataset,
 
   schema: {
     types: schemaTypes,
