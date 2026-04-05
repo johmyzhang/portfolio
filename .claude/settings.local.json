@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mkdir -p reference)",
+      "Bash(mv index.html reference/)",
+      "Bash(cp -R /Users/yizhang/Documents/portfolio-new/. /Users/yizhang/Documents/portfolio/)",
+      "Bash(git init:*)",
+      "Bash(npx sanity@latest init --env)",
+      "Bash(npx sanity@latest init --help)",
+      "Bash(npx sanity@latest init --bare --env .env.local --dataset-default --no-git --yes)",
+      "Bash(npx sanity@latest init --bare --dataset-default --no-git --yes)",
+      "Bash(npx sanity@latest init --bare --dataset production --no-git --yes)",
+      "Bash(npx sanity@latest init --bare --dataset production --project-name \"portfolio\" --no-git --yes)",
+      "Bash(npx sanity@latest login)"
+    ]
+  }
+}
