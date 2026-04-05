@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "进化日记 | 心理咨询与成长",
-  description: "一名心理咨询师的跨界、迷茫、探索，以及那些微小但确定的改变。",
+  title: "My Portfolio",
+  description: "",
 };
 
 export default function RootLayout({
